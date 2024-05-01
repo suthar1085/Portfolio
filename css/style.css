@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    background: #0f0f10;
     box-sizing: border-box;
     position: relative;
     line-height: 1.5;
@@ -333,6 +334,10 @@ textarea {
         margin: auto;
         position: static;
         transform: translate(0, 0);
+    }
+    .home-hero{
+        background: linear-gradient(to right, rgb(18 17 17 / 59%), rgb(24 23 23 / 93%)), url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
+        background-position: -109% 66%;
     }
 }
 

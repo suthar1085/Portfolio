@@ -339,6 +339,9 @@ textarea {
         background: linear-gradient(to right, rgb(18 17 17 / 59%), rgb(24 23 23 / 93%)), url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
         background-position: -109% 66%;
     }
+    .about{
+        background: #161617 !important;
+    }
 }
 
 .home-hero__info {

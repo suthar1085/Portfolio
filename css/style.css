@@ -70,7 +70,7 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    color: #111;
+    color: #f0f1f4;
     font-weight: 800;
 }
 
@@ -109,11 +109,11 @@ textarea {
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
-    color: #111;
+    color: #f0f1f4;
 }
 
 .heading-sec__main--lt {
-    color: #111;
+    color: #f0f1f4;
     font-weight: 800;
 }
 
@@ -143,7 +143,7 @@ textarea {
 .heading-sec__sub {
     display: block;
     text-align: center;
-    color: #555;
+    color: #bbb;
     font-size: 2rem;
     font-weight: 500;
     max-width: 80rem;
@@ -158,7 +158,7 @@ textarea {
 }
 
 .heading-sec__sub--lt {
-    color: #333;
+    color: #aaa;
 }
 
 .heading-sm {
@@ -205,7 +205,7 @@ textarea {
 }
 
 .btn--theme-inv {
-    color: #111;
+    color: #f0f1f4;
     background: #fff;
     border: 2px solid #7843e9;
     box-shadow: none;
@@ -214,6 +214,7 @@ textarea {
 
 .sec-pad {
     padding: 12rem 0;
+    background: #0f0f10;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -223,7 +224,7 @@ textarea {
 }
 
 .text-primary {
-    color: #333;
+    color: #cbcacf;
     font-size: 2.2rem;
     text-align: center;
     width: 100%;
@@ -242,10 +243,9 @@ textarea {
 
 .home-hero {
     color: #fff;
-    background: linear-gradient(to right,
-            rgba(245, 245, 245, 0.8),
-            rgba(245, 245, 245, 0.8)),
-        url(../images/common-bg.svg);
+    background: linear-gradient(to right, rgb(18 17 17 / 64%), rgb(24 23 23 / 2%)),
+        url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
+
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -264,9 +264,14 @@ textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    /* background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0; */
     padding: 0.5rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(33, 34, 35, 16%);
+    border-radius: 0 12px 12px 0;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -301,7 +306,7 @@ textarea {
 }
 
 .home-hero__social-icon-link:hover {
-    background: rgba(120, 67, 233, 0.2);
+    background: rgba(120, 67, 233, 0.45);
 }
 
 .home-hero__social-icon-link--bd-none {
@@ -310,6 +315,7 @@ textarea {
 
 .home-hero__social-icon {
     width: 100%;
+    filter: invert(1) drop-shadow(2px 4px 6px black);
 }
 
 .home-hero__content {
@@ -341,7 +347,7 @@ textarea {
 }
 
 .about {
-    background: #fafafa;
+    background: #141518;
 }
 
 .about__content {
@@ -361,6 +367,7 @@ textarea {
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
+    color: #edeef3;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -371,7 +378,7 @@ textarea {
 
 .about__content-details-para {
     font-size: 1.8rem;
-    color: #666;
+    color: #ccc;
     max-width: 60rem;
     line-height: 1.7;
     margin-bottom: 1rem;
@@ -447,6 +454,7 @@ textarea {
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 2rem;
+    color: #edeef3;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -457,7 +465,7 @@ textarea {
 
 .projects__row-content-desc {
     font-size: 1.8rem;
-    color: #666;
+    color: #ccc;
     max-width: 60rem;
     line-height: 1.7;
     margin-bottom: 3rem;
@@ -471,16 +479,19 @@ textarea {
 
 .contact {
     background: linear-gradient(to right,
-            rgba(245, 245, 245, 0.8),
-            rgba(245, 245, 245, 0.8)),
-        url(../images/common-bg.svg);
+    rgb(0 0 0 / 80%), rgb(0 0 0 / 70%)), url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .contact__form-container {
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    background: #fff;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(33, 34, 35, 16%);
+    border-radius: 0 12px 12px 0;
+    border: 1px solid #57535f;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    background: #fff; */
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -488,6 +499,10 @@ textarea {
     width: 95%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
+}
+
+.contact__form-container:hover{
+    border: 1px solid #7843e9;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -507,7 +522,7 @@ textarea {
 }
 
 .contact__form-label {
-    color: #666;
+    color: #ccc;
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -517,15 +532,24 @@ textarea {
 }
 
 .contact__form-input {
-    color: #333;
+    color: #bbb;
     padding: 2rem;
     width: 100%;
     border: 1px solid #ebebeb;
     font-size: 1.6rem;
     letter-spacing: 0;
-    background: #f0f0f0;
+    background: #151515;
     border-radius: 5px;
     font-weight: 600;
+}
+
+.contact__form-input:focus{
+    color: #7843e9;
+    border: 1px solid #7843e9;
+}
+
+.contact__form-input:active{
+    background-color: #7843e957;
 }
 
 .contact__form-input::-moz-placeholder {
@@ -674,7 +698,7 @@ textarea {
 .project-details__desc-para {
     font-size: 1.8rem;
     line-height: 1.7;
-    color: #666;
+    color: #ccc;
     margin-bottom: 2rem;
 }
 
@@ -729,9 +753,9 @@ textarea {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background: #000;
-    background: #fff;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background: #0000000a;
+    box-shadow: 0 10px 20px 11px rgb(0 0 0 / 22%);
 }
 
 .header__content {
@@ -751,7 +775,7 @@ textarea {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #333;
+    color: #e6e6ed;
     transition: color 0.3s;
 }
 
@@ -807,7 +831,7 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color: #e0dfeb;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -839,14 +863,16 @@ textarea {
 
 .header__main-ham-menu {
     width: 100%;
+    filter: invert(1);
 }
 
 .header__main-ham-menu-close {
     width: 100%;
+    filter: invert(1);
 }
 
 .header__sm-menu {
-    background: #fff;
+    background: #1f2125;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -875,9 +901,9 @@ textarea {
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: #333;
+    color: #bbb;
     text-align: right;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #656565;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -889,7 +915,7 @@ textarea {
 }
 
 .header__sm-menu-link:first-child a {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #7843e9;
 }
 
 .header__sm-menu-link-last {
@@ -995,13 +1021,13 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #666;
+    color: #ccc;
 }
 
 .mouse {
     width: 25px;
     height: 40px;
-    border: 2px solid #333;
+    border: 2px solid #aaa;
     border-radius: 60px;
     position: relative;
     overflow: hidden;
@@ -1015,7 +1041,7 @@ textarea {
     top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #aaa;
     border-radius: 50%;
     opacity: 1;
     animation: wheel 1.3s infinite;

@@ -245,7 +245,7 @@ textarea {
 .home-hero {
     color: #fff;
     background: linear-gradient(to right, rgb(18 17 17 / 64%), rgb(24 23 23 / 2%)),
-        url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
+        url(../images/background.jpeg);
 
     background-position: center;
     height: 100vh;
@@ -336,7 +336,7 @@ textarea {
         transform: translate(0, 0);
     }
     .home-hero{
-        background: linear-gradient(to right, rgb(18 17 17 / 59%), rgb(24 23 23 / 93%)), url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
+        background: linear-gradient(to right, rgb(18 17 17 / 59%), rgb(24 23 23 / 93%)), url(../images/background.jpeg);
         background-position: -109% 66%;
     }
     .about{
@@ -487,7 +487,7 @@ textarea {
 
 .contact {
     background: linear-gradient(to right,
-    rgb(0 0 0 / 80%), rgb(0 0 0 / 70%)), url(https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg);
+    rgb(0 0 0 / 80%), rgb(0 0 0 / 70%)), url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
 }

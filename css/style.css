@@ -245,7 +245,7 @@ textarea {
     background: linear-gradient(to right,
             rgba(245, 245, 245, 0.8),
             rgba(245, 245, 245, 0.8)),
-        url(../images/common-bg.svg);
+        url(../images/background.jpeg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
